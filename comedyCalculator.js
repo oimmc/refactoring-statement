@@ -9,6 +9,7 @@ module.exports = class ComedyCalculator extends PerformanceCalculator {
     result += 300 * perf.audience;
     return result;
   }
+  
   getVolumeCredits(perf) {
     return super.getVolumeCredits(perf) + Math.floor(perf.audience / 5);
   }
